@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Friend Circle</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #8360c3, #2ebf91);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .friends {
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .friend-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      width: 280px;
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .friend-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.6);
+    }
+    .friend-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+    .friend-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .friend-desc {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #e0e0e0;
+    }
+    .about-us {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 2rem 2rem;
+      margin-top: 3rem;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .about-us h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+    .about-us p {
+      font-size: 1.1rem;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .friends {
+        flex-direction: column;
+        align-items: center;
+      }
+      .friend-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Our Friend Circle</header>
+  <div class="container">
+    <div class="friends">
+      <div class="friend-card">
+        <img src="anup.jpg.jpeg" alt="Friend 1 Photo" class="friend-photo" />
+        <div class="friend-name">ANUP RAJ</div>
+        <div class="friend-desc">Loyal, creative, and always brings positivity to the group.</div>
+      </div>
+      <div class="friend-card">
+        <img src="alok.jpg.jpeg" alt="Friend 2 Photo" class="friend-photo" />
+        <div class="friend-name">ALOK YADAV</div>
+        <div class="friend-desc">Fun-loving, adventurous, and the heart of our circle.</div>
+      </div>
+      <div class="friend-card">
+        <img src="yuvraj.jpg.jpeg" alt="Friend 3 Photo" class="friend-photo" />
+        <div class="friend-name">YUVRAJ KUSHWAHA</div>
+        <div class="friend-desc">The planner and problem solver who keeps us on track.</div>
+      </div>
+    </div>
+
+    <div class="about-us">
+      <h2>About Us</h2>
+      <p>
+        We are three best friends connected by trust, laughter, and countless memories. Our bond is built on respect and a shared passion for life’s adventures. Together, we support and inspire each other to become the best versions of ourselves.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
